@@ -1,10 +1,18 @@
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.DecimalFormat;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-
+        String playerName;
         final int NUM_TOTAL_QUESTIONS = 20, TOTAL_CATEGORIES = 4;
         int numQuestions, category;
         String[][] totalQuestions = new String[TOTAL_CATEGORIES][NUM_TOTAL_QUESTIONS];
@@ -12,11 +20,48 @@ public class Main {
         String maybeRepeat;
 
 
+
+        //para leer el archivo entero
+        Path path = Paths.get("src/resources/scores.txt");
+        try {
+            List<String>linesFile = Files.readAllLines(path);
+
+            //con join podemos juntar todos los elementos de una matriz (indicando el separador que queramos)
+            String linesTogether = String.join("\n",linesFile);
+
+            //así muestra el texto a saco
+            System.out.println(linesFile);
+
+            //muestra el texto de dentro del String
+            System.out.println(linesTogether);
+
+        } catch (IOException e) {
+            System.out.println("ERROR BUSCANDO EL FICHERO DE TEXTO");
+        }
+
+
+        //para leer el archivo líea a línea
+        String fileName = "src/resources/scores.txt";
+        BufferedReader br;
+        String line;
+
+        try {
+            br = new BufferedReader(new FileReader(fileName));
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println("ERROR BUSCANDO EL FICHERO DE TEXTO");
+        }
+
+
+
+
+
+
+
         questionsBox(totalQuestions);
         answersBox(totalAnswers);
-
-
-        starting();
+        playerName = starting();
         do {
             category = choosingCategory();
             System.out.println("Te toca escoger la cantidad de preguntas que quieres responder.");
@@ -88,7 +133,8 @@ public class Main {
 
     }
 
-    private static void starting() {
+    private static String starting() {
+        String playerName;
         System.out.println("Bienvenido/a a Null! El Cuestionario definitivo!!");
         System.out.println("Expliquemos de qué va el asunto\n(luego no vale decir que no sabías las reglas, eh?):\n");
         System.out.println("En primer lugar, deberás escoger la categoría y número de preguntas que quieres contestar.");
@@ -99,6 +145,11 @@ public class Main {
         System.out.println("\nPor otro lado, si fallas más de dos veces seguidas\nquedarás totalmente descalificado\ny justificarás con el contenido de tu cerebro\nel nombre de nuestro programa.");
         System.out.println("\nSin más dilación, vamos a ello.");
         System.out.println("Mucha suerte!!!\n");
+        System.out.println("Lo primero de todo, dinos cómo te llamas!");
+        playerName = Teclat.llegirString();
+        System.out.println("Pues bienvenido, "+playerName+".\n");
+
+        return playerName;
     }
 
     private static String checkingYesOrNot(String[] answersToPlay, int questionIndex, String[] questionsToPlay) {
