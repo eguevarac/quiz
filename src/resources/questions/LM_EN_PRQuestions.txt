@@ -1,0 +1,20 @@
+EN: El lenguaje máquina se expresa en código binario?
+EN: Podemos dividir la CPU en dos partes: la CU y la...?\n- SQL\n- DTD\n- ALU\n- RR
+EN: El código ejecutable es el código intermedio entre el código fuente y el código objeto?
+EN: Java tiene un lenguaje propio denominado byte code?
+EN: Qué significan las siglas IDE?\n- Integrated Direction Environment\n- Integrated Development Environment\n- Integrated Definition Environment\n- Inmortals Dying Exclusive
+EN: Un lenguaje puede ser interpretado o...?\n- Traducido\n- Compilado\n- Blasfemo\n- Directo
+EN: Cómo se llama el compilador que emplea la máquina virtual de Java?\n- JAT\n- JET\n- JIT\n- EEUU
+EN: El lenguaje de alto nivel es el que mejor puede entender la máquina?
+LM: Qué significan las siglas JSON?\n- Java System On\n- Javascript Object Notation\n- Java System Open Notes\n- Javascript Open Notes
+LM: Qué significan las siglas XML?\n- Extreme Markup Language\n- Extreme Make-up Language\n- Extreme Manual Language
+LM: Qué significan las siglas HTML?\n- Hambre Tendre Mucha Luego\n- Hit Time Markup Language\n- Hyper Text Markup Language
+LM: Un documento de texto bien formado y uno válido son lo mismo?
+LM: Un documento JSON está compuesto por listas y objetos?
+PR: Un loop while tiene que realizarse al menos una vez?
+PR: Empleamos un bucle for i cuando no conocemos el número de repeticiones?
+PR: Un String es un array de chars?
+PR: Una función 'void' siempre retorna algo?
+LM: La etiqueta <nombre>Manolo<nombre> sería correcta en XML?
+LM: El DTD es un lenguaje de marcas?
+EN: Se puede cambiar el valor de una variable mientras se ejecuta un programa en debug?

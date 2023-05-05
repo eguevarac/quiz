@@ -1,0 +1,20 @@
+EIE: Cuántos socios tiene que haber como mínimo para montar una Sociedad Civil?\n- 2\n- 3\n- No tiene
+EIE: La Comunidad de Bienes tiene capital mínimo?
+EIE: Una SL tiene un capital mínimo de 3000€?
+EIE: Una SLNE tiene un capital máximo de 60000€?
+EIE: Una SA tiene mínimo de socios?
+EIE: Una SA tiene que desembolsar el 100% del capital mínimo en el momento de su constitución?
+EIE: Una Sociedad Cooperativa tiene responsabilidad ilimitada?
+EIE: Una sociedad colectiva tiene mínimo de socios?
+EIE: En una sociedad laboral, los socios no trabajadores deben tener el 51% del capital mínimo?
+EIE: En una SL los socios pueden vender sus participaciones libremente?
+FOL: Los estibadores portuarios pertenecen a las relaciones laborales especiales?
+FOL: Los transportistas pertenecen a las relaciones laborales especiales?
+FOL: Los convenios colectivos están por encima de los reglamentos en la jerarquía de leyes?
+FOL: Las horas extraordinarias estructurales son obligatorias?
+FOL: El descanso diario de un trabajador ha de ser de mínimo 8 horas?
+FOL: Puede un padre solicitar el permiso de lactancia?
+FOL: Puede un trabajador renunciar a sus vacaciones?
+FOL: Los funcionarios pertenecen a las relaciones laborales especiales?
+FOL: El principio de norma más favorable indica que la norma de rango superior\nestablece las disposiciones mínimas para el trabajador?
+FOL: El principio de condición más beneficiosa indica que si existen dos o más\nnormas que regulan una misma cuestión, se aplicará aquélla que establezca\nlas condiciones más beneficiosas para el trabajador.?

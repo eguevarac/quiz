@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.List;
 
@@ -18,45 +20,7 @@ public class Main {
         String[][] totalQuestions = new String[TOTAL_CATEGORIES][NUM_TOTAL_QUESTIONS];
         String[][] totalAnswers = new String[TOTAL_CATEGORIES][NUM_TOTAL_QUESTIONS];
         String maybeRepeat;
-
-
-
-        //para leer el archivo entero
-        Path path = Paths.get("src/resources/scores.txt");
-        try {
-            List<String>linesFile = Files.readAllLines(path);
-
-            //con join podemos juntar todos los elementos de una matriz (indicando el separador que queramos)
-            String linesTogether = String.join("\n",linesFile);
-
-            //así muestra el texto a saco
-            System.out.println(linesFile);
-
-            //muestra el texto de dentro del String
-            System.out.println(linesTogether);
-
-        } catch (IOException e) {
-            System.out.println("ERROR BUSCANDO EL FICHERO DE TEXTO");
-        }
-
-
-        //para leer el archivo líea a línea
-        String fileName = "src/resources/scores.txt";
-        BufferedReader br;
-        String line;
-
-        try {
-            br = new BufferedReader(new FileReader(fileName));
-
-        } catch (FileNotFoundException e) {
-
-            System.out.println("ERROR BUSCANDO EL FICHERO DE TEXTO");
-        }
-
-
-
-
-
+        Player player;
 
 
         questionsBox(totalQuestions);
@@ -110,6 +74,10 @@ public class Main {
                 System.out.println("Has fallado más de dos veces seguidas!");
                 System.out.println("Está claro que sólo una palabra habita en tu mente:");
                 System.out.println("\nNULL!!");
+                player = new Player(playerName.toUpperCase(), numQuestions, correctAnswers);
+
+                addingScore(player);
+
             } else {
                 System.out.println("\nDing, ding, ding!");
                 System.out.println("Se acabó la tortura y ya sólo queda el recuento.");
@@ -118,8 +86,12 @@ public class Main {
                 System.out.println("Tu puntuación final es de: " + (points + extraPoints));
                 float correctPercent = percentCalculator(correctAnswers, numQuestions);
                 finalConclusion(correctPercent);
+                player = new Player(playerName.toUpperCase(),numQuestions,correctAnswers,(points+extraPoints),correctPercent);
+
+                addingScore(player);
             }
 
+            showingScore();
             System.out.println("\nQué me dices?");
             System.out.println("Echamos otra?");
             maybeRepeat = finishing();
@@ -133,6 +105,75 @@ public class Main {
 
     }
 
+    private static void addingScore(Player player) {
+
+        String playerScore = player.toString();
+
+        Path path = Paths.get("src/resources/scores.txt");
+
+        try {
+            Files.writeString(path, "\n"+playerScore, StandardOpenOption.APPEND);
+
+        } catch (IOException e) {
+
+            System.out.println("ERROR EN LA ESCRITURA DEL FICHERO");
+        }
+    }
+
+    private static void showingScore() {
+        System.out.println("\nVEAMOS LAS ESTADÍSTICAS DE TODOS LOS JUGADORES:\n");
+
+        //para leer el archivo entero
+
+        /*
+        Path path = Paths.get("src/resources/scores.txt");
+        try {
+            List<String>linesFile = Files.readAllLines(path);
+
+            //con join podemos juntar todos los elementos de una matriz (indicando el separador que queramos)
+            String linesTogether = String.join("\n",linesFile);
+
+            //así muestra el texto a saco
+            System.out.println(linesFile);
+
+            //muestra el texto de dentro del String
+            System.out.println(linesTogether);
+
+        } catch (IOException e) {
+            System.out.println("ERROR BUSCANDO EL FICHERO DE TEXTO");
+        }
+
+         */
+
+
+
+
+        //para leer el archivo líea a línea
+
+
+        String fileName = "src/resources/scores.txt";
+        BufferedReader br;
+        String line;
+
+        try {
+            br = new BufferedReader(new FileReader(fileName));
+            while ((line = br.readLine()) != null){
+                System.out.println(line);
+            }
+
+        } catch (FileNotFoundException e) {
+
+            System.out.println("NO SE HA ENCONTRADO EL FICHERO");
+
+        } catch (IOException e) {
+
+            System.out.println("ERROR DURANTE LA LECTURA DEL FICHERO");
+        }
+
+
+    }
+
+
     private static String starting() {
         String playerName;
         System.out.println("Bienvenido/a a Null! El Cuestionario definitivo!!");
@@ -145,9 +186,9 @@ public class Main {
         System.out.println("\nPor otro lado, si fallas más de dos veces seguidas\nquedarás totalmente descalificado\ny justificarás con el contenido de tu cerebro\nel nombre de nuestro programa.");
         System.out.println("\nSin más dilación, vamos a ello.");
         System.out.println("Mucha suerte!!!\n");
-        System.out.println("Lo primero de todo, dinos cómo te llamas!");
+        System.out.println("Lo primero de todo: dinos cómo te llamas!");
         playerName = Teclat.llegirString();
-        System.out.println("Pues bienvenido, "+playerName+".\n");
+        System.out.println("Pues bienvenido, "+playerName+"!\n");
 
         return playerName;
     }

@@ -1,0 +1,20 @@
+BD: Los tres grupos de instrucciones en SQL son  el DDL, el DML y el...?\n- DEL\n- DIL\n- DCL
+BD: Las bases de datos se emplean para guardar información?
+BD: En el modelo Entidad-Relación, cada uno de los recuadros equivale a una entidad?
+BD: En el modelo Entidad-Relación, cada uno de los óvalos equivale a una relación?
+BD: En el modelo Entidad-Relación, puede una relación tener atributos?
+BD: Los atributos son las filas en las tablas de las bases de datos?
+BD: Según la regla de integridad referencial, puede tener una clave foránea un valor null?
+BD: Puede una clave primaria tener un valor null según la regla de integridad de entidad?
+BD: En SQL, qué significan las siglas DDL?\n- Data Domination language\n- Data Definition Language\n- Data Direction Language\n- Diciembre Duerme Largo
+BD: En SQL, qué significan las siglas DCL?\n- Data Class language\n- Donde Como luego\n- Data Control Language\n- Data Christmas Language
+BD: En SQL, qué significan las siglas DML?\n- Dame mas libros\n- Data Manipulation Language\n- Data Massive Language\n- Data Movement Language
+BD: La cardinalidad N:M siempre genera una nueva tabla?
+BD: En SQL, las instrucciones CREATE, DROP y ALTER pertenecen al grupo de instrucciones del DML?
+BD: En SQL, el comando SELECT * FROM 'nombre_tabla' nos muestra todos los elementos de la tabla mencionada?
+BD: Qué quieren decir las siglas SQL?\n- Standard Query Language\n- Structured Query Language\n- Sin Queso Longanizas
+BD: Una base de datos puede ser centralizada o...?\n- Descentralizada\n- Distribuida\n- Fragmentada
+BD: Una base de datos puede ser relacional o...?\n- Individual\n- De entidades\n- No relacional
+BD: En SQL, las instrucciones SELECT, INSERT y DELETE pertenecen al grupo de instrucciones del DML?
+BD: Una tupla es cada una de las filas de una tabla?
+BD: SQL es un SGBD?
