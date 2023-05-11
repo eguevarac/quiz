@@ -1,14 +1,14 @@
 EN: El lenguaje máquina se expresa en código binario?
-EN: Podemos dividir la CPU en dos partes: la CU y la...?\n- SQL\n- DTD\n- ALU\n- RR
+EN: Podemos dividir la CPU en dos partes: la CU y la...?@- SQL@- DTD@- ALU@- RR
 EN: El código ejecutable es el código intermedio entre el código fuente y el código objeto?
 EN: Java tiene un lenguaje propio denominado byte code?
-EN: Qué significan las siglas IDE?\n- Integrated Direction Environment\n- Integrated Development Environment\n- Integrated Definition Environment\n- Inmortals Dying Exclusive
+EN: Qué significan las siglas IDE?@- Integrated Direction Environment@- Integrated Development Environment@- Integrated Definition Environment@- Inmortals Dying Exclusive
 EN: Un lenguaje puede ser interpretado o...?\n- Traducido\n- Compilado\n- Blasfemo\n- Directo
-EN: Cómo se llama el compilador que emplea la máquina virtual de Java?\n- JAT\n- JET\n- JIT\n- EEUU
+EN: Cómo se llama el compilador que emplea la máquina virtual de Java?@- JAT@- JET@- JIT@- EEUU
 EN: El lenguaje de alto nivel es el que mejor puede entender la máquina?
-LM: Qué significan las siglas JSON?\n- Java System On\n- Javascript Object Notation\n- Java System Open Notes\n- Javascript Open Notes
-LM: Qué significan las siglas XML?\n- Extreme Markup Language\n- Extreme Make-up Language\n- Extreme Manual Language
-LM: Qué significan las siglas HTML?\n- Hambre Tendre Mucha Luego\n- Hit Time Markup Language\n- Hyper Text Markup Language
+LM: Qué significan las siglas JSON?@- Java System On@- Javascript Object Notation@- Java System Open Notes@- Javascript Open Notes
+LM: Qué significan las siglas XML?@- Extreme Markup Language@- Extreme Make-up Language@- Extreme Manual Language
+LM: Qué significan las siglas HTML?@- Hambre Tendre Mucha Luego@- Hit Time Markup Language@- Hyper Text Markup Language
 LM: Un documento de texto bien formado y uno válido son lo mismo?
 LM: Un documento JSON está compuesto por listas y objetos?
 PR: Un loop while tiene que realizarse al menos una vez?

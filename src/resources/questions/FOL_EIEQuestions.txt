@@ -1,4 +1,4 @@
-EIE: Cuántos socios tiene que haber como mínimo para montar una Sociedad Civil?\n- 2\n- 3\n- No tiene
+EIE: Cuántos socios tiene que haber como mínimo para montar una Sociedad Civil?@- 2@- 3@- No tiene
 EIE: La Comunidad de Bienes tiene capital mínimo?
 EIE: Una SL tiene un capital mínimo de 3000€?
 EIE: Una SLNE tiene un capital máximo de 60000€?

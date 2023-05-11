@@ -1,20 +1,20 @@
-SIS: Cuál es la IP reservada para el localhost?\n- 192.168.0.0\n- 127.0.0.1\n- 1.0.0.0\n- 37434959348385
-SIS: De qué clase es la dirección IP 172.21.240.0?\n- Alfa\n- B\n- Omega\n- C\n- No tiene clase
+SIS: Cuál es la IP reservada para el localhost?@- 192.168.0.0@- 127.0.0.1@- 1.0.0.0@- 37434959348385
+SIS: De qué clase es la dirección IP 172.21.240.0?@- Alfa@- B@- Omega@- C@- No tiene clase
 SIS: La dirección IP 172.16.255.255 es pública?
 SIS: Al hacer subnetting se amplía el número de equipos que podemos conectar a una misma red?
-SIS: Cuántos equipos podremos conectar a una red con una máscara 255.255.255.0?\n- 256\n- 255\n- 254\n- Ninguno
+SIS: Cuántos equipos podremos conectar a una red con una máscara 255.255.255.0?@- 256@- 255@- 254@- Ninguno
 SIS: La tercera generación de ordenadores se caracteriza por el microprocesador?
-SIS: Quién definió las partes fundamentales de un ordenador: CPU, memoria principal y unidades de entrada/salida?\n- John von Neumann\n- Charles Babbage\n- Steve Jobs\n- Charles Chapplin
+SIS: Quién definió las partes fundamentales de un ordenador: CPU, memoria principal y unidades de entrada/salida?@- John von Neumann@- Charles Babbage@- Steve Jobs@- Charles Chapplin
 SIS: Hermann Hollerith es conocido por desencriptar códigos alemanes con la máquina Enigma?
-SIS: Cuántas generaciones de ordenadores hay?\n- 3\n- 4\n- 5\n- 6\n- Demasiadas para ser contadas
+SIS: Cuántas generaciones de ordenadores hay?@- 3@- 4@- 5@- 6@- Demasiadas para ser contadas
 SIS: Una máscara de red 255.255.240.0 es estándar?
 SIS: La dirección IP 10.255.255.255 es privada?
 SIS: En una máscara estándar de clase B pertenecen dos bytes a la porción de host?
-SIS: Cuánto es en decimal el siguiente número binario: 11111111?\n- 128\n- 256\n- 8\n- 64\n- No se puede pasar a decimal
-SIS: Cuántos bits componen un nibble?\n- 2\n- 4\n- 6\n- 8
-SIS: Cómo se llamaba la máquina que usaba Alan Turing?\n- UNIVAC\n- ENIAC\n- ENIGMA\n- CALCULATRÓN 3000
-SIS: Cuál fue el primer ordenador?\n- Apple 2\n- ENIAC\n- R2D2\n- Macintosh 666
+SIS: Cuánto es en decimal el siguiente número binario: 11111111?@- 128@- 256@- 8@- 64@- No se puede pasar a decimal
+SIS: Cuántos bits componen un nibble?@- 2@- 4@- 6@- 8
+SIS: Cómo se llamaba la máquina que usaba Alan Turing?@- UNIVAC@- ENIAC@- ENIGMA@- CALCULATRÓN 3000
+SIS: Cuál fue el primer ordenador?@- Apple 2@- ENIAC@- R2D2@- Macintosh 666
 SIS: Dos direcciones IP están en la misma red si tienen la misma máscara de subred?
 SIS: Joseph Marie Jaquard inventó las tarjetas perforadas?
-SIS: Cuántos bytes tiene la dirección 192.168.0.0?\n- 256\n- 4\n- 8\n- 6\n- Depende
+SIS: Cuántos bytes tiene la dirección 192.168.0.0?@- 256@- 4@- 8@- 6@- Depende
 SIS: La dirección de broadcast es la última dirección IP dentro de un rango de red?
