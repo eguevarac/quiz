@@ -9,7 +9,9 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.sql.SQLOutput;
 import java.text.DecimalFormat;
+import java.util.Date;
 import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +24,8 @@ public class Main {
         String maybeRepeat;
         Player player;
 
+        Date today = new Date();
+        System.out.println(today);
 
         questionsBox(totalQuestions);
         answersBox(totalAnswers);
@@ -122,7 +126,11 @@ public class Main {
 
     private static void addingScore(Player player) {
 
-        String playerScore = player.toString();
+        Date date = new Date();
+        String today = date.toString();
+        today = today.concat("--->");
+
+        String playerScore =today.concat(player.toString());
 
         Path path = Paths.get("src/resources/scores.txt");
 

@@ -1,4 +1,4 @@
-
+import java.util.Date;
 
 public class Player {
 
@@ -7,6 +7,7 @@ public class Player {
     private int correctAnswers;
     private int score;
     private float percentScore;
+
 
 
     public Player(String playerName, int questions, int correctAnswers) {
@@ -24,12 +25,13 @@ public class Player {
         this.percentScore = percentScore;
     }
 
+
     @Override
     public String toString() {
-        return  playerName + ".- Total preguntas:"+questions+
-                " | Respuestas correctas:"+correctAnswers+
-                " | Puntuación:"+score+
-                " | Porcentaje de aciertos:"+percentScore;
+        return  this.playerName + ".- Total preguntas:"+this.questions+
+                " | Respuestas correctas:"+this.correctAnswers+
+                " | Puntuación:"+this.score+
+                " | Porcentaje de aciertos:"+this.percentScore;
 
     }
 }
